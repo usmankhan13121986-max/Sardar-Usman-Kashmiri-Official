@@ -38,3 +38,4 @@ body.en{direction:ltr}body.en .hero-copy{text-align:left}body.en .hero p{text-al
 let english=false;const langButton=document.getElementById('lang');langButton.addEventListener('click',()=>{english=!english;document.documentElement.lang=english?'en':'ur';document.documentElement.dir=english?'ltr':'rtl';document.body.classList.toggle('en',english);document.querySelectorAll('[data-en]').forEach(el=>el.textContent=english?el.dataset.en:el.dataset.ur);langButton.textContent=english?'اردو':'English';});
 document.getElementById('menu').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));document.getElementById('year').textContent=new Date().getFullYear();
 </script></body></html>
+<!-- Website rebuild -->

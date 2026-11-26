@@ -1,0 +1,10 @@
+media:
+  input: media
+  output: /media
+
+content:
+  - name: homepage
+    label: Homepage
+    type: file
+    path: index.html
+    format: code
